@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="style.css">
   <script src="./script.js"></script>
 </head>
-<body onload="render()">
+<body>
   <h1>Tipps und Tricks</h1>
-  <div id="content" class="single_element">
 
+  <div id="filter_buttons">
+    <button onclick="renderFiltered(1)">1</button>
+    <button onclick="renderFiltered(2)">2</button>
   </div>
-  
+
+  <div id="content"></div>
 </body>
 </html>
 
@@ -92,20 +95,20 @@
     <input type="checkbox" onchange="console.log(9)" /> -->
     <!-- <input id="test_input" type="number" value="5" /> -->
 
-    <!-- Kurzüberblick: -->
+    <!-- KurzÃ¼berblick: -->
     <!-- <body onload="console.log(123)">
-        läuft, wenn die Seite geladen wurde.
+        lÃ¤uft, wenn die Seite geladen wurde.
         <input onkeydown="console.log('keydown')" />
-         läuft, wenn eine Taste gedrückt wird.
+         lÃ¤uft, wenn eine Taste gedrÃ¼ckt wird.
          <input onkeyup="console.log('keyup')" />
-           läuft, wenn eine Taste losgelassen wird.
+           lÃ¤uft, wenn eine Taste losgelassen wird.
            <input onfocus="console.log(3456)" />
-           läuft, wenn das Feld Fokus bekommt.
+           lÃ¤uft, wenn das Feld Fokus bekommt.
            <input type="checkbox" onchange="console.log(9)" />
-            läuft, wenn sich der Wert ändert, z. B. Checkbox an/aus. -->
+            lÃ¤uft, wenn sich der Wert Ã¤ndert, z. B. Checkbox an/aus. -->
 
     <!-- 01 Aufgabe 
-               Erstelle ein inputfeld mit einer selbst gewählten id -->
+               Erstelle ein inputfeld mit einer selbst gewÃ¤hlten id -->
     <!-- <input id="my_input" type="text" /> -->
 
     <!-- 02 Aufgabe
@@ -135,8 +138,8 @@ Vergleiche nun den log von onkeyup und onkeydown.
 
 Beim Testen siehst du:
 
-onkeydown läuft, sobald die Taste gedrückt wird.
-onkeyup läuft, nachdem die Taste wieder losgelassen wurde.
+onkeydown lÃ¤uft, sobald die Taste gedrÃ¼ckt wird.
+onkeyup lÃ¤uft, nachdem die Taste wieder losgelassen wurde.
 Wichtiger Unterschied:
 Bei keydown ist der neue Buchstabe oft noch nicht im Input-Wert enthalten.
 Bei keyup ist der neue Buchstabe normalerweise schon im Input-Feld angekommen.-->
@@ -151,13 +154,13 @@ Bei keyup ist der neue Buchstabe normalerweise schon im Input-Feld angekommen.--
     <!-- onfocus="console.log(3465)" -->
     <!-- onkeyup="console.log('keyup')" onkeydown="console.log('keydown') -->
 
-    <!-- <button onclick="toggleDNone('our_p_tag')">bitte ausführen</button>
+    <!-- <button onclick="toggleDNone('our_p_tag')">bitte ausfÃ¼hren</button>
 
     <h1 id="website_title">Der Title Der Webseite</h1>
 
     <p id="our_p_tag">ich bin das p tAG</p>
 
-    <button onclick="toggleDNone('our_p_tag')">bitte ausführen</button> -->
+    <button onclick="toggleDNone('our_p_tag')">bitte ausfÃ¼hren</button> -->
 
     <!-- <h2 onclick="console.log(1)" id="website_title_click">
       Der Titel der Webseite
@@ -173,3 +176,4 @@ Bei keyup ist der neue Buchstabe normalerweise schon im Input-Feld angekommen.--
   </body>
   <script src="./dom.manupulaton.js"></script>
 </html>
+
