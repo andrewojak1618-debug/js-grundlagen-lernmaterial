@@ -1,0 +1,10 @@
+/* .d_none {
+  display: none;
+} */
+
+.single_element {
+  color: white;
+  font-size: 12px;
+  padding: 16px;
+  background-color: rgb(40, 39, 42);
+}
